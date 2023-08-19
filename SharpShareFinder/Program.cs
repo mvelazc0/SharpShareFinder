@@ -233,7 +233,7 @@ namespace SharpShareFinder
             Console.WriteLine("\n\n");
 
         }
-
+        //https://learn.microsoft.com/en-gb/previous-versions/windows/desktop/ldap/example-code-for-establishing-a-session-without-encryption
         static List<string> GetDnsHostNames()
         {
             List<string> dnshostnames = new List<string>();
