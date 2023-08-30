@@ -1,3 +1,12 @@
+                                 _  _   _____ _                   ______ _           _           
+                               _| || |_/  ___| |                  |  ___(_)         | |          
+                              |_  __  _\ `--.| |__   __ _ _ __ ___| |_   _ _ __   __| | ___ _ __ 
+                               _| || |_ `--. \ '_ \ / _` | '__/ _ \  _| | | '_ \ / _` |/ _ \ '__|
+                              |_  __  _/\__/ / | | | (_| | | |  __/ |   | | | | | (_| |  __/ |   
+                                |_||_| \____/|_| |_|\__,_|_|  \___\_|   |_|_| |_|\__,_|\___|_|   
+                                                                   
+
+
 # SharpShareFinder
 
 SharpShareFinder is a minimalistic network share discovery tool designed to enumerate shares in Windows Active Directory networks leveraging .NET parallelism.
