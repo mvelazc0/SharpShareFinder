@@ -9,8 +9,14 @@
 
 # SharpShareFinder
 
-SharpShareFinder is a minimalistic network share discovery tool designed to enumerate shares in Windows Active Directory networks leveraging .NET parallelism.
+SharpShareFinder is a minimalistic network share discovery tool designed to enumerate shares in Windows Active Directory networks. Written in C#, it leverages .NET parallelism for efficient scanning. Initially conceived as a simulation tool for building detection rules, it may also be used for security assessments
 
-Written in C#, it employs a three-step process to achieve its goals. First, it identifies a domain controller using the DsGetDcName function exported by NetApi32.dll. It then uses this DC to enumerate all domain-joined computers through the Lightweight Directory Access Protocol (LDAP). To perform this task, It leverages functions exported by Wldap32.dll, such as ldap_init and ldap_search_st.
+At its current iteration, it follows a three-step process:
 
-Finally, SharpShareFinder enumerates and prints all available network shares for each identified host. To do this, it relies on the NetShareEnum API function, also exported by Netapi32.dll, the same method utilized by tools like Invoke-ShareFinder.
+1. **Domain Controller Identification**: Utilizes the DsGetDcName function from NetApi32.dll to identify a domain controller.
+
+2. **Host Enumeration**: Uses the identified domain controller to enumerate all domain-joined computers via Lightweight Directory Access Protocol (LDAP). It leverages functions from Wldap32.dll such as ldap_init and ldap_search_st.
+   
+3. **Share Enumeration**: Enumerates and prints all available network shares for each identified host using the NetShareEnum API function from Netapi32.dll. 
+
+
