@@ -9,7 +9,7 @@
 
 # SharpShareFinder
 
-SharpShareFinder is a minimalistic network share discovery POC tool designed to enumerate shares in Windows Active Directory networks. Written in C#, it leverages .NET parallelism for efficient scanning. Initially conceived as a simulation tool for building detection rules, it may also be used for security assessments
+SharpShareFinder is a minimalistic network share discovery POC tool designed to enumerate shares in Windows Active Directory networks. Written in C#, it leverages .NET parallelism for efficient scanning. Initially conceived as a simulation tool for building detection rules, it may also be used for security assessments.
 
 At its current iteration, it follows a three-step process:
 
