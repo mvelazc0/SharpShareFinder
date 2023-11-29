@@ -20,3 +20,4 @@ At its current iteration, it follows a three-step process:
 3. **Share Enumeration**: Enumerates and prints all available network shares for each identified host using the NetShareEnum API function from Netapi32.dll. 
 
 
+![plot](./img/sharpsharefinder.png)
