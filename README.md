@@ -11,6 +11,8 @@
 
 SharpShareFinder is a minimalistic network share discovery POC tool designed to enumerate shares in Windows Active Directory networks. Written in C#, it leverages .NET parallelism for efficient scanning. Initially conceived as a simulation tool for building detection rules, it may also be used for security assessments.
 
+It was released as part of the security blog post publication and research, [Sharing is Not Caring: Hunting for Network Share Discovery.](https://www.splunk.com/en_us/blog/security/sharing-is-not-caring-hunting-for-file-share-discovery.html)
+
 At its current iteration, it follows a three-step process:
 
 1. **Domain Controller Identification**: Utilizes the DsGetDcName function from NetApi32.dll to identify a domain controller.
